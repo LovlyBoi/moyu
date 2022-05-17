@@ -1,0 +1,19 @@
+/* pages/index3/index3.wxss */
+.e1{
+    text-size-adjust: 100px;
+    position: fixed;
+    text-align: center;
+    top:30%;
+    color: var(--heavyColor);
+    font-size: 18px;
+    height:50rpx;
+}
+.e2{
+    text-size-adjust: 100px;
+    position: fixed;
+    text-align: center;
+    top:40%;
+    color: var(--heavyColor);
+    font-size: 18px;
+    height:50rpx;
+}

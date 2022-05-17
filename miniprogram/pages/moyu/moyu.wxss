@@ -1,0 +1,52 @@
+/* pages/moyu/moyu.wxss */
+page{
+  --heavyColor: #A29988;
+  --midColor: #C7B8A1;
+  --lightColor: #f0ebe5;
+  --textColor: #5f524a;
+}
+
+.t1{
+  position: fixed;
+  width: 100vw;
+  text-align: center;
+  top: 18vw;
+  color: var(--textColor);
+  font-size: 8vw;
+}
+
+.t2{
+  position: fixed;
+  width: 100vw;
+  text-align: center;
+  top: 40vw;
+  font-size: 8vw;
+}
+
+.fish{
+  position: fixed;
+  bottom: 38vw;
+  left: 72vw;
+  height: 18vw;
+  width: 18vw;
+  overflow: hidden;
+}
+
+.fish image{
+  position:relative;
+  width: 162vw;
+  height: 18vw;
+}
+
+
+.tt{
+  width: 100vw;
+  text-align: center;
+  position: fixed;
+  bottom: 8vw;
+}
+
+.tt text{
+  color: #0003;
+  font-size: 3vw;
+}

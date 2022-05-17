@@ -1,0 +1,17 @@
+<view class="t1">
+  <text class="cont">{{t1Text}}</text>
+</view>
+<view class="t2">
+  <text class="highlight">{{t2Highlight}}</text>
+  <text class="cont">{{t2Text}}</text>
+</view>
+
+<view class="fish">
+  <image src="../../images/fish_jump.png" bindtap="fishTap" id="fishImg" style="left:{{leftValue+'vw'}}"></image>
+</view>
+
+<view class="tt">
+  <text>
+    快乐摸鱼，摸鱼快乐
+  </text>
+</view>

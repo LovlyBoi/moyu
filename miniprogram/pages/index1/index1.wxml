@@ -1,0 +1,18 @@
+<!--pages/index1/index1.wxml-->
+<text>关于反馈</text>
+<view>
+<van-cell title="点我填写反馈信息" icon="shop-o" is-link>
+</van-cell>
+</view>
+<view class="w1">
+<van-cell
+  is-link
+  title="联系我们"
+  link-type="navigateTo"
+  url="/pages/index3/index3"
+  size="large"
+  icon="service-o"
+/></view>
+
+
+

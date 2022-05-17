@@ -1,0 +1,11 @@
+<!--pages/index3/index3.wxml-->
+<view class="e1">
+    <text>如果手机屏幕前的您有可以更加咸鱼的想法做法都可以联系我们</text>
+</view>
+
+<view class="e2">联系邮箱:
+<view>咸鱼一号：728881636@qq.com</view>
+<view>咸鱼二号：1134341284@qq.com</view>
+<view>咸鱼三号：1176170208@qq.com</view>
+<view>咸鱼四号：1144918611@qq.com</view>
+</view>

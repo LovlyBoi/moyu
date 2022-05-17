@@ -1,0 +1,10 @@
+/* pages/index2/index2.wxss */
+.q1{
+    text-size-adjust: 100px;
+    position: fixed;
+    text-align: center;
+    bottom:30%;
+    color: var(--heavyColor);
+    font-size: 28px;
+    height:50rpx;
+}
