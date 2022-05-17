@@ -6,7 +6,7 @@ page {
   --textColor: #5f524a;
 }
 
-.title {
+.title-pannel {
   position: fixed;
   width: 100vw;
   text-align: center;
@@ -15,7 +15,7 @@ page {
   font-size: 8vw;
 }
 
-.t2 {
+.countdown {
   position: fixed;
   width: 100vw;
   text-align: center;
@@ -39,14 +39,14 @@ page {
 }
 
 
-.tt {
+.bottom-text {
   width: 100vw;
   text-align: center;
   position: fixed;
   bottom: 8vw;
 }
 
-.tt text {
+.bottom-text text {
   color: #0003;
   font-size: 3vw;
 }

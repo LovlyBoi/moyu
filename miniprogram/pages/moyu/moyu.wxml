@@ -1,16 +1,16 @@
-<view class="title">
-  <text class="cont">{{t1Text}}</text>
+<view class="title-pannel">
+  <text class="title">{{isHoliday ? '还可以接着摸鱼' : '距离假期快乐摸鱼还有：'}}</text>
 </view>
-<view class="t2">
-  <text class="highlight">{{t2Highlight}}</text>
-  <text class="cont">{{t2Text}}</text>
+<view class="countdown">
+  <text class="countdown-number">{{countdownNumber}} </text>
+  <text>{{isHoliday ? '天~' : '天！！'}}</text>
 </view>
 
 <view class="fish">
   <image src="../../images/fish_jump.png" bindtap="fishTap" id="fishImg" style="left:{{leftValue+'vw'}}"></image>
 </view>
 
-<view class="tt">
+<view class="bottom-text">
   <text>
     快乐摸鱼，摸鱼快乐
   </text>

@@ -1,1 +1,8 @@
-<van-calendar show="{{ show }}" bind:close="onClose" poppable="{{ false }}"show-confirm="{{ false }}" color="#A29988" title="摸鱼日历" formatter="{{ formatter }}"/>
+<van-calendar
+  show="{{ show }}"
+  poppable="{{ false }}"
+  show-confirm="{{ false }}" 
+  color="#A29988"
+  title="摸鱼日历" 
+  formatter="{{ formatter }}"
+/>

@@ -16,23 +16,23 @@ Page({
     },
   },
 
-  onDisplay() {
-    this.setData({ show: true });
-  },
-  onClose() {
-    this.setData({ show: false });
-  },
-  formatDate(date) {
-    date = new Date(date);
-    return `${date.getMonth() + 1}/${date.getDate()}`;
-  },
-  onConfirm(event) {
-    const [start, end] = event.detail;
-    this.setData({
-      show: false,
-      date: `${this.formatDate(start)} - ${this.formatDate(end)}`,
-    });
-  },
+  // onDisplay() {
+  //   this.setData({ show: true });
+  // },
+  // onClose() {
+  //   this.setData({ show: false });
+  // },
+  // formatDate(date) {
+  //   date = new Date(date);
+  //   return `${date.getMonth() + 1}/${date.getDate()}`;
+  // },
+  // onConfirm(event) {
+  //   const [start, end] = event.detail;
+  //   this.setData({
+  //     show: false,
+  //     date: `${this.formatDate(start)} - ${this.formatDate(end)}`,
+  //   });
+  // },
 
   /**
    * 生命周期函数--监听页面加载
