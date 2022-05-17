@@ -1,7 +1,7 @@
 // pages/moyu/moyu.js
-// let cnt  = 0;
-Page({
+import { HolidayCalculater } from '../../utils/holidayCalculater'
 
+Page({
   /**
    * 页面的初始数据
    */
@@ -11,51 +11,56 @@ Page({
     t2Text: "",
     leftValue: 0,
     fishState: true,
-    timer:undefined,
+    timer: undefined,
     cnt: 0,
+    isHoliday: undefined,
+  },
+
+  initData() {
+    
   },
 
   // 鱼动画的点击响应函数 
-  fishTap(){
+  fishTap() {
     clearInterval(this.data.timer);
-    if(this.data.fishState){
+    if (this.data.fishState) {
       this.setData({
         leftValue: this.data.leftValue = 0,
       })
-    }else{
+    } else {
       this.setData({
-        leftValue: this.data.leftValue = -8*18,
+        leftValue: this.data.leftValue = -8 * 18,
       })
     }
     this.data.cnt = 0;
-    if(this.data.fishState){
-      this.data.timer = setInterval(()=>{
+    if (this.data.fishState) {
+      this.data.timer = setInterval(() => {
         this.setData({
           leftValue: this.data.leftValue - 18,
-          cnt: this.data.cnt+1,
+          cnt: this.data.cnt + 1,
         })
-        if(this.data.cnt === 8){
+        if (this.data.cnt === 8) {
           clearInterval(this.data.timer);
           this.setData({
             fishState: false,
           })
         }
-      }, 120);
+      }, 100);
     }
-    else{
-      this.data.timer = setInterval(()=>{
+    else {
+      this.data.timer = setInterval(() => {
         this.setData({
           leftValue: this.data.leftValue + 18,
-          cnt: this.data.cnt+1,
+          cnt: this.data.cnt + 1,
         })
-        if(this.data.cnt === 8){
+        if (this.data.cnt === 8) {
           clearInterval(this.data.timer);
           this.setData({
             fishState: true
           })
         }
       }, 120);
-      
+
     }
   },
 
@@ -187,35 +192,35 @@ Page({
         let dayPt = _day;
         let monthPt = _month; // 存储月份
 
-        if(dayPt === Month[monthPt][0]){
-            dayPt = 1; // 从下一天开始计数
-            monthPt++;
+        if (dayPt === Month[monthPt][0]) {
+          dayPt = 1; // 从下一天开始计数
+          monthPt++;
         }
-        else{
-            dayPt++;
+        else {
+          dayPt++;
         }
         let cnt = 0;
 
-        while(Month[monthPt][dayPt]){
-            // 不是月末，计数器加一，日期加一
-            if(dayPt !== Month[monthPt][0]){
-                cnt++;
-                dayPt++;
+        while (Month[monthPt][dayPt]) {
+          // 不是月末，计数器加一，日期加一
+          if (dayPt !== Month[monthPt][0]) {
+            cnt++;
+            dayPt++;
+          }
+          // 是月末，计数器加一，月份加一
+          else {
+            cnt++;
+            dayPt = 1;
+            if (monthPt < 12) {
+              monthPt++;
             }
-            // 是月末，计数器加一，月份加一
-            else{
-                cnt++;
-                dayPt = 1;
-                if(monthPt < 12){
-                    monthPt++;
-                }
-                else{ // 12月末需要重新维护Month数组
-                    console.log("需要维护啦！");
-                }
+            else { // 12月末需要重新维护Month数组
+              console.log("需要维护啦！");
             }
+          }
         }
         this.setData({
-          t2Highlight: "还可以摸鱼"+((cnt + getTodayTimeLess()).toFixed(5)),
+          t2Highlight: "还可以摸鱼" + ((cnt + getTodayTimeLess()).toFixed(5)),
           t2Text: "天~"
         })
       }
@@ -224,12 +229,12 @@ Page({
         let dayPt = _day;
         let monthPt = _month; // 存储月份
 
-        if(dayPt == Month[monthPt][0]){
-            dayPt = 1; // 从下一天开始计数
-            monthPt++;
+        if (dayPt == Month[monthPt][0]) {
+          dayPt = 1; // 从下一天开始计数
+          monthPt++;
         }
-        else{
-            dayPt++;
+        else {
+          dayPt++;
         }
 
         let cnt = 0;
@@ -266,14 +271,14 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    console.log('Ready')
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    console.log('Show')
   },
 
   /**

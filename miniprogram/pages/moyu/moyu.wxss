@@ -1,12 +1,12 @@
 /* pages/moyu/moyu.wxss */
-page{
+page {
   --heavyColor: #A29988;
   --midColor: #C7B8A1;
   --lightColor: #f0ebe5;
   --textColor: #5f524a;
 }
 
-.t1{
+.title {
   position: fixed;
   width: 100vw;
   text-align: center;
@@ -15,7 +15,7 @@ page{
   font-size: 8vw;
 }
 
-.t2{
+.t2 {
   position: fixed;
   width: 100vw;
   text-align: center;
@@ -23,7 +23,7 @@ page{
   font-size: 8vw;
 }
 
-.fish{
+.fish {
   position: fixed;
   bottom: 38vw;
   left: 72vw;
@@ -32,21 +32,21 @@ page{
   overflow: hidden;
 }
 
-.fish image{
-  position:relative;
+.fish image {
+  position: relative;
   width: 162vw;
   height: 18vw;
 }
 
 
-.tt{
+.tt {
   width: 100vw;
   text-align: center;
   position: fixed;
   bottom: 8vw;
 }
 
-.tt text{
+.tt text {
   color: #0003;
   font-size: 3vw;
 }

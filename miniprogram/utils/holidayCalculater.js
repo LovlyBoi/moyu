@@ -1,13 +1,4 @@
-function HolidayCalculater() {
-  const yearArr = [];
-  const month = [];
-  for (let i = 1; i < 31; i++) {
-    month.push(i);
-  }
-  const thisYear = (new Date()).getFullYear();
-
-  return yearArr;
-}
+function HolidayCalculater() { }
 
 const holidays = {};
 holidays[2022] = {
@@ -26,27 +17,81 @@ holidays[2022] = {
   [11]: [],
   [12]: [],
 }
+holidays[2023] = {
+  // [月份]: [日期，放假（true）或加班（false）]
+  // 未收录2023法定假日
+  [1]: [],
+  [2]: [],
+  [3]: [],
+  [4]: [],
+  [5]: [],
+  [6]: [],
+  [7]: [],
+  [8]: [],
+  [9]: [],
+  [10]: [],
+  [11]: [],
+  [12]: [],
+}
 
 function judgeDate(date) {
-  if (date instanceof Date) {
-    const thisYear = (new Date()).getFullYear();
-    const thisMonth = date.getMonth()+1;
-    const thisDate = date.getDate();
-    // 尝试看看是不是法定假日，或者加班日
-    const tryHolidayIdx = holidays[thisYear][thisMonth].findIndex(d => d[0] === thisDate);
-    if (tryHolidayIdx >= 0) { // 是法定假日
-      return holidays[thisYear][thisMonth][tryHolidayIdx][1];
-    } else { // 不是法定假日，看看是不是周末
-      const day = date.getDay();
-      // 0 或 6 代表周末放假
-      return day === 0 || day === 6;
+  checkDate(date);
+  const thisYear = (new Date()).getFullYear();
+  const thisMonth = date.getMonth() + 1;
+  const thisDate = date.getDate();
+  // 尝试看看是不是法定假日，或者加班日
+  const tryHolidayIdx = holidays[thisYear][thisMonth].findIndex(d => d[0] === thisDate);
+  if (tryHolidayIdx >= 0) { // 是法定假日
+    return holidays[thisYear][thisMonth][tryHolidayIdx][1];
+  } else { // 不是法定假日，看看是不是周末
+    const day = date.getDay();
+    // 0 或 6 代表周末放假
+    return day === 0 || day === 6;
+  }
+}
+
+function getNextDate(date) {
+  checkDate(date);
+  return new Date(date.getFullYear(), date.getMonth(), date.getDate() + 1);
+}
+
+// 获取最近的假期，返回 Date 类型(当天0点0时0分)，如果传入的日期就是假期，则返回 null
+function getRecentHoliday(date) {
+  checkDate(date);
+  if (judgeDate(date)) return null;
+  let nextDate = getNextDate(date);
+  while (1) {
+    if (judgeDate(nextDate)) {
+      return nextDate;
+    } else {
+      nextDate = getNextDate(nextDate);
     }
-  } else {
-    console.warn("judgeDate函数只能接收一个Date类型的参数");
+  }
+}
+
+// 获取最近的工作日，返回 Date 类型，如果传入的日期就是工作日，返回 null
+function getRecentWorkDay(date) {
+  checkDate(date);
+  if (!judgeDate(date)) return null;
+  let nextDate = getNextDate(date);
+  while (1) {
+    if (!judgeDate(nextDate)) {
+      return nextDate;
+    } else {
+      nextDate = getNextDate(nextDate);
+    }
+  }
+}
+
+function checkDate(date) {
+  if (!(date instanceof Date)) {
+    throw (new Error('参数必须为 Date 类型'));
   }
 }
 
 HolidayCalculater.judgeDate = judgeDate;
+HolidayCalculater.getRecentHoliday = getRecentHoliday;
+HolidayCalculater.getRecentWorkDay = getRecentWorkDay;
 
 export {
   HolidayCalculater,
