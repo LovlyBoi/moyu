@@ -33,15 +33,20 @@
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
     "userConfirmedBundleSwitch": false,
-    "packNpmManually": false,
-    "packNpmRelationList": [],
+    "packNpmManually": true,
     "minifyWXSS": true,
     "lazyloadPlaceholderEnable": false,
     "useStaticServer": true,
     "showES6CompileOption": false,
     "disableUseStrict": false,
     "useCompilerPlugins": false,
-    "minifyWXML": true
+    "minifyWXML": true,
+    "packNpmRelationList": [
+      {
+        "packageJsonPath": "./package.json",
+        "miniprogramNpmDistDir": "./miniprogram/"
+      }
+    ]
   },
   "appid": "wx3af02cd26dc6fea0",
   "projectname": "moyu_0.11",

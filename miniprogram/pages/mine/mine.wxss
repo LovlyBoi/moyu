@@ -15,11 +15,6 @@ page {
   --textColor: #333;
 }
 
-text {
-  color: var(--textColor);
-  font-size: 50rpx;
-}
-
 .m3 {
   position: fixed;
   width: 100%;

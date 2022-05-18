@@ -1,4 +1,5 @@
 // pages/index1/index1.js
+import Toast from '../../miniprogram_npm/@vant/weapp/toast/toast';
 Page({
 
     /**
@@ -9,7 +10,7 @@ Page({
     },
 
     handleTap() {
-      console.log('jjjj')
+      Toast('不接受')
     },
 
     /**

@@ -12,6 +12,6 @@
     icon="service-o"
   />
 </view>
-
+<van-toast id="van-toast" />
 
 
