@@ -2,7 +2,7 @@
   show="{{ show }}"
   poppable="{{ false }}"
   show-confirm="{{ false }}" 
-  color="#A29988"
+  color="#fa7e23"
   title="摸鱼日历" 
   formatter="{{ formatter }}"
 />
