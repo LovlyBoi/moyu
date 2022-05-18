@@ -1,22 +1,36 @@
 <!--pages/mine/mine.wxml-->
+ <!-- <view class="fish">
+  <a href="javascript:;">
+    <image src="../../images/fish_active.png"></image>
+  </a>
+</view> -->
 <view class="m3">
-  <van-cell
-    is-link
-    title="反馈与不帮助"
-    link-type="navigateTo"
-    url="/pages/index1/index1"
-    size="large"
-    icon="star-o"
-  />
-</view>
+<van-cell
+  is-link
+  title="反馈与不帮助"
+  link-type="navigateTo"
+  url="/pages/index1/index1"
+  size="large"
+  icon="star-o"
+/></view>
 <view class='m4'>
-  <van-cell
-    is-link
-    title="我们的故事"
-    link-type="navigateTo"
-    url="/pages/index2/index2"
-    size="large"
-    icon="chat-o"
-  />
-</view>
+<van-cell
+  is-link
+  title="我们的故事"
+  link-type="navigateTo"
+  url="/pages/index2/index2"
+  size="large"
+  icon="chat-o"
+/> </view>
+<body>
+  <view class="user-wrapper">
+    <view class="container">
+      <view class="userinfo">
+        <button bindtap="btn">按钮</button>
+      </view>
+    </view>
+  </view>
+  
+
+</body>
  

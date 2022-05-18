@@ -1,36 +1,13 @@
 Page({
-      
   data: {
-    src:'/images/pic.jpg',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUseGetUserProfile: false,
+    itemList: ['不是所有的按钮都有用捏', '总有一些按钮庸庸碌碌的过完一生，却没有任何成就', '关于这个按钮没什么用但是我就想放在这这件事', '还想写一个但想不出来了'],
   },
-  onLoad() {
-    if (wx.getUserProfile) {
-      this.setData({
-        canIUseGetUserProfile: true
-      })
-    }
-  },
-  // getUserProfile(e) {
-  //   // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认
-  //   // 开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
-  //   wx.getUserProfile({
-  //     desc: '用于完善会员资料', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
-  //     success: (res) => {
-  //       this.setData({
-  //         userInfo: res.userInfo,
-  //         hasUserInfo: true
-  //       })
-  //     }
-  //   })
-  // },
-  // getUserInfo(e) {
-  //   // 不推荐使用getUserInfo获取用户信息，预计自2021年4月13日起，getUserInfo将不再弹出弹窗，并直接返回匿名的用户个人信息
-  //   this.setData({
-  //     userInfo: e.detail.userInfo,
-  //     hasUserInfo: true
-  //   })
-  // },
+  btn() {
+    wx.showToast({
+      title: this.data.itemList[Math.floor(Math.random()*this.data.itemList.length)],
+      icon: 'none',
+      duration: 2000//持续的时间
+    })
+  }
+  
 })
