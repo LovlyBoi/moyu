@@ -9,7 +9,7 @@ Page({
     date: '',
     show: false,
     formatter(day) {
-      if (HolidayCalculater.judgeDate(day.date)) {
+      if (HolidayCalculater.isHoliday(day.date)) {
         day.topInfo = "可摸鱼";
       }
       return day;

@@ -1,5 +1,5 @@
 <view class="title-pannel">
-  <text class="title">{{isHoliday ? '还可以接着摸鱼' : '距离假期快乐摸鱼还有：'}}</text>
+  <text class="title">{{isHoliday ? '还可以接着摸鱼' : '距离' + holidayName + '快乐摸鱼还有：'}}</text>
 </view>
 <view class="countdown">
   <text class="countdown-number">{{countdownNumber}} </text>
