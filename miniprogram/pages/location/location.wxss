@@ -1,6 +1,0 @@
-/* pages/location/location.wxss */
-.test{
-  color: rgba(0,0,0,.7);
-  text-align: center;
-  font-size: 5.5vw;
-}

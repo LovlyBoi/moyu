@@ -6,20 +6,10 @@
     "pages/index1/index1",
     "pages/index2/index2",
     "pages/index3/index3",
-    "pages/index4/index4",
-    "pages/location/location"
+    "pages/index4/index4"
   ],
-  "plugins": {
-    "routePlan": {
-      "version": "1.0.12",
-      "provider": "wx50b5593e81dd937a"
-    }
-  },
-  "permission": {
-    "scope.userLocation": {
-      "desc": "你的位置信息将用于小程序定位"
-    }
-  },
+  "plugins": {},
+  "permission": {},
   "window": {
     "backgroundColor": "#fff",
     "backgroundTextStyle": "light",
@@ -43,12 +33,6 @@
         "text": "日历",
         "iconPath": "images/calendar.png",
         "selectedIconPath": "images/calendar_active.png"
-      },
-      {
-        "pagePath": "pages/location/location",
-        "text": "地点",
-        "iconPath": "images/location.png",
-        "selectedIconPath": "images/location2.png"
       },
       {
         "pagePath": "pages/mine/mine",
