@@ -1,7 +1,7 @@
 <!--pages/index1/index1.wxml-->
 <text class="title">关于反馈</text>
 <view>
-  <van-cell title="反馈信息" icon="closed-eye" />
+  <van-cell bind:click="handleTap" title="反馈信息" icon="closed-eye" />
 </view>
 <view class="w1">
   <van-cell

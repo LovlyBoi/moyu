@@ -42,5 +42,17 @@
       }
     ]
   },
+  "setting": {
+    "packNpmManually": true,
+    "packNpmRelationList": [
+      {
+        "packageJsonPath": "./package.json",
+        "miniprogramNpmDistDir": "./"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-toast": "@vant/weapp/toast/index"
+  },
   "sitemapLocation": "sitemap.json"
 }
