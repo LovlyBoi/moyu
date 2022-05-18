@@ -1,77 +1,84 @@
-/* pages/mine/mine.wxss *//* pages/mine/mine.wxss */
-  
-page{
-    --heavyColor: #A29988;
-    --midColor: #C7B8A1;
-    --lightColor: #f0ebe5;
-    background-color: whitesmoke;
-  }
-  text{
-    color:var(--textColor);
-    font-size:50rpx;
-  }
-  
-  .m3{
-    position: fixed;
-    width: 100%;
-    text-align: center;
-    bottom: 40%;
-    color: var(--textColor);
-    font-size: 28px;
-    height:50rpx;
-    border-radius: 30px;
-    background-color: var(--heavyColor);
-  }  
-  .m4{
-    position: fixed;
-    width: 100%;
-    text-align: center;
-    bottom: 50%;
-    color: var(--textColor);
-    font-size: 28px;
-    height:50rpx;
-    background-color: var(--heavyColor);
-  } 
-  .m4::after
-  {
-    border:0;
-  }
+/* pages/mine/mine.wxss */
+/* pages/mine/mine.wxss */
 
-  .userinfo {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    color:var(--midColor);
-  }
-  
-  .userinfo-avatar {
-    overflow: hidden;
-    width: 150rpx;
-    height: 150rpx;
-    margin: 20rpx;
-    border-radius: 50%;
-  }
-  .usermotto {
-    margin-top: 200px;
-  }
-    .user-wrapper{
-      height: 35vw;
-      width: 100vw;
-      background-color:var(--midColor);
-    }
-    .container{
-      position: relative;
-      left: 10vw;
-      top: 20vw;
-      height: 35vw;
-      width: 80vw;
-      border-radius: 19px;
-      background-color:white;
-    }
+/* page {
+  --heavyColor: #A29988;
+  --midColor: #C7B8A1;
+  --lightColor: #f0ebe5;
+  background-color: whitesmoke;
+} */
 
-    .container button{
-      position: relative;
-      top: 17.5vw;
-      transform: translateY(-50%);
-    }
-      
+page {
+  --heavyColor: rgb(22, 19, 179);
+  --midColor: rgb(147, 181, 207);
+  --lightColor: #f6f6f6;
+  --textColor: #333;
+}
+
+.m3 {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  bottom: 40%;
+  color: var(--textColor);
+  font-size: 28px;
+  height: 50rpx;
+  border-radius: 30px;
+  background-color: var(--heavyColor);
+}
+
+.m4 {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  bottom: 50%;
+  color: var(--textColor);
+  font-size: 28px;
+  height: 50rpx;
+  background-color: var(--heavyColor);
+}
+
+.m4::after {
+  border: 0;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--midColor);
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 150rpx;
+  height: 150rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.user-wrapper {
+  height: 35vw;
+  width: 100vw;
+  background-color: var(--midColor);
+}
+
+.container {
+  position: relative;
+  left: 10vw;
+  top: 20vw;
+  height: 35vw;
+  width: 80vw;
+  border-radius: 19px;
+  background-color: white;
+}
+
+.container button {
+  position: relative;
+  top: 17.5vw;
+  transform: translateY(-50%);
+}

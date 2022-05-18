@@ -42,5 +42,9 @@
       }
     ]
   },
+  "usingComponents": {
+    "van-calendar": "@vant/weapp/calendar/index",
+    "van-toast": "@vant/weapp/toast/index"
+  },
   "sitemapLocation": "sitemap.json"
 }

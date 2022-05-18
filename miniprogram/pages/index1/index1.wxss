@@ -1,1 +1,7 @@
 /* pages/index1/index1.wxss */
+.title {
+  text-align: center;
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: lighter;
+}

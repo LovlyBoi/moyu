@@ -1,4 +1,5 @@
 // pages/index1/index1.js
+import Toast from '../../miniprogram_npm/@vant/weapp/toast/toast';
 Page({
 
     /**
@@ -6,6 +7,10 @@ Page({
      */
     data: {
 
+    },
+
+    handleTap() {
+      Toast('不接受')
     },
 
     /**
