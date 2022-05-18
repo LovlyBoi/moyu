@@ -1,9 +1,13 @@
 /* pages/moyu/moyu.wxss */
 page {
-  --heavyColor: #A29988;
+  /* --heavyColor: #A29988;
   --midColor: #C7B8A1;
   --lightColor: #f0ebe5;
-  --textColor: #5f524a;
+  --textColor: #5f524a; */
+  --heavyColor: rgb(22, 19, 179);
+  --midColor: rgb(147, 181, 207);
+  --lightColor: #f6f6f6;
+  --textColor: #333;
 }
 
 .title-pannel {
@@ -13,6 +17,7 @@ page {
   top: 18vw;
   color: var(--textColor);
   font-size: 8vw;
+  font-weight: lighter;
 }
 
 .countdown {
@@ -21,6 +26,11 @@ page {
   text-align: center;
   top: 40vw;
   font-size: 8vw;
+  /* font-weight: lighter; */
+}
+
+.countdown-text {
+  font-weight: lighter;
 }
 
 .fish {
@@ -47,6 +57,7 @@ page {
 }
 
 .bottom-text text {
-  color: #0003;
+  color: rgba(0, 0, 0, 0.5);
   font-size: 3vw;
+  font-weight: lighter;
 }

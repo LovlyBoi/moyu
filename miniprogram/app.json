@@ -13,14 +13,14 @@
   "window": {
     "backgroundColor": "#fff",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#A29988",
+    "navigationBarBackgroundColor": "#8ab6c9",
     "navigationBarTitleText": "moyu",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "selectedColor": "#5F524A",
     "color": "#f0ebe5",
-    "backgroundColor": "#C7B8A1",
+    "backgroundColor": "#8ab6c9",
     "list": [
       {
         "pagePath": "pages/moyu/moyu",

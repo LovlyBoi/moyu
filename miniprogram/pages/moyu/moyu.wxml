@@ -3,7 +3,7 @@
 </view>
 <view class="countdown">
   <text class="countdown-number">{{countdownNumber}} </text>
-  <text>{{isHoliday ? '天~' : '天！！'}}</text>
+  <text class="countdown-text">{{isHoliday ? '天~' : '天！！'}}</text>
 </view>
 
 <view class="fish">
