@@ -4,10 +4,10 @@ page {
   --midColor: #C7B8A1;
   --lightColor: #f0ebe5;
   --textColor: #5f524a; */
-  --heavyColor: rgb(22, 19, 179);
-  --midColor: rgb(147, 181, 207);
-  --lightColor: #f6f6f6;
-  --textColor: #333;
+  --headercolor: #8ab6c9;
+  --footercolor: #8ab6c9;
+  --lightcolor: #0aefff;
+  --heavycolor: #3f689e;
 }
 
 .title-pannel {
@@ -60,4 +60,39 @@ page {
   color: rgba(0, 0, 0, 0.5);
   font-size: 3vw;
   font-weight: lighter;
+}
+.progress-content{
+ position: absolute;
+ width:80%;
+ height:100%;
+ border-radius: 25rpx;
+ background: -webkit-linear-gradient(45deg,
+      var(--heavycolor) 20%, var(--lightcolor) 20%,
+      var(--lightcolor) 40%, var(--heavycolor) 40%,
+      var(--heavycolor) 60%, var(--lightcolor) 60%,
+      var(--lightcolor) 80%, var(--heavycolor) 80%);
+opacity:0.5;
+}
+.progress{
+  position:fixed;
+  width: 80vw;
+  height: 50rpx;
+  margin-top: 50vh;
+  margin-left:10vw;
+  border-radius: 25rpx;
+  border:1px solid #ccc;
+  /* overflow: hidden; */
+  box-shadow: 0 0 5px 0px #ddd inset;
+}
+.text{
+  position: absolute; 
+  font-size:30rpx;
+  width:100%;
+  /* left:50%;
+  top:50%;
+  transform: translate(-50%,-50%); */
+  text-align: center;
+  line-height: 50rpx;
+  color:#000;
+  z-index:3;
 }

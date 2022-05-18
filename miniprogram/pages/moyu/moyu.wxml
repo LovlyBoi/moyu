@@ -5,6 +5,10 @@
   <text class="countdown-number">{{countdownNumber}} </text>
   <text class="countdown-text">{{isHoliday ? '天~' : '天！！'}}</text>
 </view>
+<view class="progress">
+<view class="text">距离发薪日还有{{countdownNumber}}天</view>
+<view class="progress-content" style="width:{{progress_width}}"></view>
+</view>
 
 <view class="fish">
   <image src="../../images/fish_jump.png" bindtap="fishTap" id="fishImg" style="left:{{leftValue+'vw'}}"></image>

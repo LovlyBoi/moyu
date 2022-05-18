@@ -10,7 +10,8 @@ Page({
     fishState: true,
     cnt: 0,
     countdownNumber: '',
-    isHoliday: undefined, // 今天是不是假期
+    isHoliday: undefined, // 今天是不是假期,
+    progress_width:'80%'
   },
   // 倒计时定时器
   countdownTimer: null,
