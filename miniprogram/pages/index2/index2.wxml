@@ -1,4 +1,48 @@
 <!--pages/index2/index2.wxml-->
+<title class="q2">我们的故事</title>
 <view class="q1">
-    <text>来自四个农村大学生一天打三份工的辛酸血泪史</text>
+<text>这是一个关于四个穷苦大学生一天打三份工的故事
+在一个叫做“尔滨埋土”的大学
+一个普通的上午，一个普通的教室
+“摸鱼日历”的第一版logo就诞生在一张略显破旧的草稿纸上，与此同时还有“摸鱼日历”最初的“骨架
+</text>
+<image mode="widthFix" src="https://s3.bmp.ovh/imgs/2022/10/24/74c35be15c69d7c2.jpg"></image>
+<text>
+逐渐地，摸鱼日历从最开始的“骨架”逐渐变得丰满，变得有血有肉
+</text>
+<image mode="widthFix" src="https://s3.bmp.ovh/imgs/2022/10/24/bb27c6f0425fd431.jpg"></image>
+<image mode="widthFix" src="cloud://cloud1-7g7mltb5f100cb01.636c-cloud1-7g7mltb5f100cb01-1305550356/logo1.jpg"></image>
+<image mode="widthFix" src="cloud://cloud1-7g7mltb5f100cb01.636c-cloud1-7g7mltb5f100cb01-1305550356/logo2.jpg"></image>
+<image mode="widthFix" src="cloud://cloud1-7g7mltb5f100cb01.636c-cloud1-7g7mltb5f100cb01-1305550356/墨刀1.jpg"></image>
+<image mode="widthFix" src="cloud://cloud1-7g7mltb5f100cb01.636c-cloud1-7g7mltb5f100cb01-1305550356/moyu.jpg"></image>
+<text>
+2021年5月8日
+我们第一次提交了“摸鱼日历”的代码但是却收到了“审核未通过”的结果，虽然很快错误就被修改了，但是当时的失落也真真实实地取代了按下提交键时带来的喜悦
+终于，5月9号，一个同样普通的下午
+第二次提交时我们顺利通过了审核</text>
+<image mode="widthFix" src="cloud://cloud1-7g7mltb5f100cb01.636c-cloud1-7g7mltb5f100cb01-1305550356/过审.jpg"></image>
+<text>
+像自己的孩子诞生一样，我们怀着无比激动的心情将它强行安利给我们身边的朋友，骄傲溢于言表
+当然，这毕竟使我们第一次做小程序，我们的作品中一定还存在着很多很多问题
+我们也在不断发现、不断更新，我们的大佬也在夜以继日地改bug，请继续对我们抱有期待。
+
+
+当然，生活是多彩的，辛勤工作的同时，我们也在努力干饭，我们一起吃过了 黄焖鸡米饭、石锅拌饭、炸鸡饭、排骨火锅、还有很多面、很多奶茶
+与此同时也用相机记录下了很多精彩瞬间</text>
+<image mode="widthFix" src="cloud://cloud1-7g7mltb5f100cb01.636c-cloud1-7g7mltb5f100cb01-1305550356/美丽睡姿.jpg"></image>
+<image mode="widthFix" src="cloud://cloud1-7g7mltb5f100cb01.636c-cloud1-7g7mltb5f100cb01-1305550356/小花发卡 (1).jpg"></image>
+<image mode="widthFix" src="cloud://cloud1-7g7mltb5f100cb01.636c-cloud1-7g7mltb5f100cb01-1305550356/过道.jpg"></image>
+<image mode="widthFix" src="cloud://cloud1-7g7mltb5f100cb01.636c-cloud1-7g7mltb5f100cb01-1305550356/2人合照.jpg"></image>
+<image mode="widthFix" src="cloud://cloud1-7g7mltb5f100cb01.636c-cloud1-7g7mltb5f100cb01-1305550356/3人合照.jpg"></image>
+<image mode="widthFix" src="cloud://cloud1-7g7mltb5f100cb01.636c-cloud1-7g7mltb5f100cb01-1305550356/4人合照.jpg"></image>
+<text>
+很幸运能和这些朋友一起从春天走到夏天，也很荣幸自己能见证“摸鱼日历”一步步的成长
+生活在不断向前
+</text>
+<image mode="widthFix" src="cloud://cloud1-7g7mltb5f100cb01.636c-cloud1-7g7mltb5f100cb01-1305550356/Story/微信图片_20210527192649.jpg"></image>
+<text>
+我们的故事仍在继续……
+
+
+</text>
 </view>
